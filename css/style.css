@@ -1,0 +1,519 @@
+/*---------------------------------
+
+  全体
+
+---------------------------------*/
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*---------------------------------
+
+  左サイドバー
+
+---------------------------------*/
+
+.leftSidebar {
+  position: fixed;
+  left: 140px;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  padding-top: 5px;
+  /* margin-right: 50px; */
+  cursor: pointer;
+}
+
+.leftSidebar > img {
+  padding-left: 15px;
+}
+
+.leftSidebar__twiter-img {
+  /* margin-bottom: 10px; */
+  width: 30px;
+  padding: 10px;
+}
+
+.leftSidebar__twiter-img:hover {
+  /* background-color: #E8F5FE;
+  border-radius: 50%; */
+}
+
+.leftSidebar__list > li {
+  /* width: 7em; */
+}
+
+.leftSidebar__list > li > a {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px 0 10px 15px;
+  margin-top: 10px;
+  /* width: 7em; */
+  text-decoration: none;
+  color: #000;
+}
+
+.profile__link {
+  color: #1DA1F2 !important;
+}
+
+.leftSidebar__list > li > a:hover {
+  background-color: #E8F5FE;
+  color: #3DAFF4;
+  border-radius: 50px;
+}
+
+.leftSidebar__list > li > a > img {
+  width: 24px;
+}
+
+.leftSidebar__list > li > a > p {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.leftSidebar > button {
+  padding: 15px 90px;
+  margin-top: 20px;
+  background-color: #2395DC;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid #66B5E6;
+  /* cursor: pointer; */
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.leftSidebar > button:hover {
+  background-color: #1A91DA;
+  border: 1px solid #1A91DA;
+}
+
+.account {
+  padding: 10px;
+  margin-top: auto;
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+}
+
+.account:hover {
+  background-color: #E8F5FE;
+  border-radius: 30px;
+}
+
+.account > div {
+  margin-right: 25px;
+  font-size: 14px;
+}
+
+.account > div > h4 {
+  font-weight: bold;
+}
+
+.account > div > p {
+  color: #6B8092;
+}
+
+.account__face {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.account__setting {
+  width: 15px;
+  height: 15px;
+}
+
+
+/*---------------------------------
+
+  中央
+
+---------------------------------*/
+
+section {
+  margin-left: 250px;
+  border-left: 1px solid #EBEEF0;
+  border-right: 1px solid #EBEEF0;
+}
+
+.section__top {
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.section__top--arrow {
+  padding: 5px 10px;
+  margin-left: 15px;
+  color: #1A91DA;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section__top--arrow:hover {
+  background-color: #E8F5FE;
+  border-radius: 50%;
+}
+
+.section__top > div {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+.section__top--name {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.section__top--tweet {
+  font-size: 12px;
+  color: #5B7083;
+}
+
+.section__center {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  background-color: #C4CFD6;
+}
+
+.section__center > img {
+  position: absolute;
+  top: 120px;
+  left: 15px;
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.section__center--txt {
+  padding: 30px 0 20px 20px;
+}
+
+.section__center--txt-name {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.section__center--txt-adress {
+  font-size: 15px;
+  color: #65788A;
+}
+
+.section__center--txt-birth {
+  padding-top: 10px;
+  font-size: 15px;
+  color: #65788A;
+}
+
+.section__center--txt-birth > img {
+  margin-right: 6px;
+}
+
+.section__center--btn {
+  display: flex;
+  /* width: 650px; */
+  padding: 10px 15px;
+  margin: 10px 10px 0 auto;
+  background-color: white;
+  color: #1A91DA;
+  border-radius: 30px;
+  border: 1px solid #1A91DA;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section__center--btn:hover {
+  background-color: #E8F5FE;
+}
+
+.section__center--btn:focus {
+  outline: 0;
+}
+
+.section__center--txt > div > p > img {
+  width: 15px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 10px; */
+  border-bottom: 1px solid #EBEEF0;
+  font-weight: bold;
+  color: #5A5E62;
+}
+
+.menu__list > li {
+  /* position: relative; */
+  /* padding: 10px 37px; */
+  cursor: pointer;
+}
+
+.menu__list > li:hover {
+  background-color: #E8F5FE;
+}
+
+.menu__list > li:first-child {
+  border-bottom: 1px solid #1DA1F2;
+}
+
+.menu__list > li > a {
+  padding: 10px 37px;
+  color: #4D5154;
+  text-decoration: none;
+  display: block;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+}
+
+.menu__list > li > a:hover {
+  color: #1DA1F2 !important;
+}
+
+.tweets__link {
+  color: #1DA1F2 !important;
+  /* border-bottom: 1px solid #1DA1F2; */
+}
+
+.tweet__txt {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.tweet__txt > h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tweet__txt > p {
+  margin: 15px 0;
+  color: #65788A;
+}
+
+.tweet__txt > button {
+  padding: 10px 20px;
+  background-color: #1A91DA;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/*---------------------------------
+
+  右サイドバー
+
+---------------------------------*/
+
+
+.rightSidebar {
+  padding-top: 10px;
+  margin-left: 30px;
+}
+
+.search_container {
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+  display: block;
+  padding: 7px 10px;
+  border-radius: 20px;
+  /* height: 100px; */
+  width: 365px;
+  overflow: hidden;
+  background: #EBEEF0;
+}
+
+.search_container input[type="submit"] {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  font-weight: lighter;
+  background: none;
+  color: #5B7083;
+  border: none;
+  outline : none;
+  font-family: FontAwesome;
+}
+
+.search_container input[type="text"] {
+  margin-left: 35px;
+  border: none;
+  background: #EBEEF0;
+  height: 2.0em;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+
+.flends {
+  margin-top: 20px;
+  background-color: #F4F5F6;
+  border-radius: 10px;
+}
+
+.flends > h3 {
+  padding: 10px 0 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.flends__list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #EBEEF0;
+  cursor: pointer;
+}
+
+.flends__list > li:hover {
+  background-color: #D7E3EC;
+}
+
+.flends__list > li > img {
+  width: 55px;
+  border-radius: 50%;
+}
+
+.flends__list > li > div > h4 {
+  font-weight: bold;
+}
+
+.flends__list > li > button {
+  padding: 6px 15px;
+  background-color: white;
+  color: #1A91DA;
+  border-radius: 30px;
+  border: 1px solid #1A91DA;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.flends__list > li > button:hover {
+  background-color: #E8F5FE;
+}
+
+.flends__list > li > button:focus {
+  outline: 0;
+}
+
+.flends > p {
+  padding: 10px 0 10px 15px;
+  font-size: 15px;
+  color: #26A4F2;
+  border-top: 1px solid #EBEEF0;
+  cursor: pointer;
+}
+
+.flends > p:hover {
+  background-color: #D7E3EC;
+  border-radius: 0 0 10px 10px;
+}
+
+.news {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #F4F5F6;
+  border-radius: 10px;
+}
+
+.news > h3 {
+  padding: 10px 0 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news__list > li {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 15px;
+  border-top: 1px solid #EBEEF0;
+  cursor: pointer;
+}
+
+.news__list > li:hover {
+  background-color: #D7E3EC;
+}
+
+.news__list > li > img {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+.news__list > li > div > h4 {
+  font-weight: bold;
+}
+
+.news__list > li > div > h5 {
+  color: #7F8489;
+}
+
+.news__list > li > div > p {
+  font-size: 12px;
+  color: #7F8489;
+}
+
+/* .news__list > li > button {
+  padding: 6px 15px;
+  background-color: white;
+  color: #1A91DA;
+  border-radius: 30px;
+  border: 1px solid #1A91DA;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+} */
+
+/* .flends__list > li > button:hover {
+  background-color: #E8F5FE;
+} */
+
+/* .flends__list > li > button:focus {
+  outline: 0;
+} */
+
+.news > p {
+  padding: 10px 0 10px 15px;
+  font-size: 15px;
+  color: #26A4F2;
+  border-top: 1px solid #EBEEF0;
+  cursor: pointer;
+}
+
+.news > p:hover {
+  background-color: #D7E3EC;
+  border-radius: 0 0 10px 10px;
+}
