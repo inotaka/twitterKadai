@@ -242,7 +242,7 @@ section {
   position: relative;
   width: 600px;
   height: 200px;
-  margin-bottom: 5px;
+  margin-top: 5px;
   background-color: #C4CFD6;
 }
 
@@ -538,7 +538,7 @@ section {
 
 .news__list > li > div > h5 {
   color: #7F8489;
-　line-height
+　line-height: 15px;
 }
 
 .news__list > li > div > p {
