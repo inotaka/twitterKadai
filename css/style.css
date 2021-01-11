@@ -172,6 +172,7 @@ body {
 
 .account > div > h4 {
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .account > div > p {
