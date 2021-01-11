@@ -461,6 +461,7 @@ section {
 }
 
 .flends__list > li > div > h4 {
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
