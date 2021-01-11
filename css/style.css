@@ -234,7 +234,6 @@ section {
 }
 
 .section__top--tweet {
-　margin-bottom: 5px;
   font-size: 12px;
   color: #5B7083;
 }
@@ -243,6 +242,7 @@ section {
   position: relative;
   width: 600px;
   height: 200px;
+  margin-bottom: 5px;
   background-color: #C4CFD6;
 }
 
