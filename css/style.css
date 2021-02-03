@@ -69,14 +69,14 @@ body {
 ---------------------------------*/
 
 .leftSidebar {
-  position: fixed;
+  /* position: fixed;
   left: 140px;
-  height: 96%;
+  height: 96%; */
   display: flex;
   flex-direction: column;
   /* position: relative; */
   padding-top: 5px;
-  /* margin-right: 50px; */
+  margin-right: 30px;
   cursor: pointer;
 }
 
@@ -150,7 +150,8 @@ body {
 
 .account {
   padding: 10px;
-  margin-top: auto;
+  /* margin-top: auto; */
+  margin-top: 100px;
   /* position: absolute;
   top: 0;
   bottom: 0; */
@@ -197,7 +198,7 @@ body {
 ---------------------------------*/
 
 section {
-  margin-left: 250px;
+  /* margin-left: 250px; */
   border-left: 1px solid #EBEEF0;
   border-right: 1px solid #EBEEF0;
 }
