@@ -611,8 +611,39 @@ section {
   margin-left: 0;
 }
 
+.section__top > div {
+  margin-left: 15px;
+}
+
+.section__top--arrow {
+  margin-left: 5px;
+}
+
+.section__top--name {
+  margin-top: 0;
+  font-size: 15px;
+}
+
 .section__center {
   width: 100%;
+  height: 148px;
+}
+
+.section__center--txt {
+  padding-top: 13px;
+}
+
+.section__center--txt-name {
+  margin-bottom: 5px;
+}
+
+.section__center > img {
+  top: 86px;
+  width: 108px;
+}
+
+.section__center--txt-birth {
+  padding-top: 0px;
 }
 
 .section__center--btn {
@@ -623,8 +654,9 @@ section {
 }
 
 .menu__list > li > a {
-  padding: 0;
+  padding: 10px 15px;
   /* display: block; */
+  font-size: 15px;
 }
 
 /*---------------------------------
